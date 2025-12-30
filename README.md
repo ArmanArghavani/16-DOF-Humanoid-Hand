@@ -1,2 +1,2 @@
 # 16 DOF Humanoid Hand
-I'm working on programming a humanoid finger to curl accurately. The finger incorporates tendon-driven controls with 2 tendon, each controlling flexion and extension, respectively. This code was written in Arduino IDE for the ESP32-S3 Board and uses servo motors to control the tendon positions.
+I designed a 16 dof underactuated tendon-driven humanoid hand with forearm mounted actuators. The goal for this project is to make a hand that's easier to control than fully actuated, while achieving at least 75% of human motion fidelity.
