@@ -1,0 +1,7 @@
+{
+  "url": "https://cad.onshape.com/documents/9f667de5d6ac4738028a0540/w/a07785ba81821b95fc810efd/e/126d4b31ab12e512aff47c51",
+  "root_node": "Forearm <5>",
+  "output_format": "mujoco",
+  "output_filename": "robot_hand",
+  "assets_directory": "assets"
+}

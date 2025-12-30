@@ -1,0 +1,302 @@
+<?xml version="1.0" ?>
+<mujoco model="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand">
+  <compiler angle="radian" meshdir="assets" autolimits="true"/>
+  <default>
+    <default class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand">
+      <joint frictionloss="0.1" armature="0.005"/>
+      <position kp="50" dampratio="1"/>
+      <default class="visual">
+        <geom type="mesh" contype="0" conaffinity="0" group="2"/>
+      </default>
+      <default class="collision">
+        <geom group="3"/>
+      </default>
+    </default>
+  </default>
+  <asset>
+    <mesh file="midfinger.stl"/>
+    <mesh file="palm.stl"/>
+    <mesh file="forearm.stl"/>
+    <mesh file="tendonspool.stl"/>
+    <mesh file="thumbmountright_mirrored.stl"/>
+    <mesh file="basefinger.stl"/>
+    <mesh file="servo.stl"/>
+    <mesh file="tipfinger.stl"/>
+    <mesh file="wrist.stl"/>
+    <mesh file="thumbmountright_mirrored__2.stl"/>
+    <mesh file="metacarpal.stl"/>
+    <mesh file="thumbjoint.stl"/>
+    <material name="tipfinger_material" rgba="0.301961 0.290196 0.262745 1"/>
+    <material name="midfinger_material" rgba="0.301961 0.290196 0.262745 1"/>
+    <material name="basefinger_material" rgba="0.301961 0.290196 0.262745 1"/>
+    <material name="metacarpal_material" rgba="0.301961 0.290196 0.262745 1"/>
+    <material name="wrist_material" rgba="0.301961 0.290196 0.262745 1"/>
+    <material name="thumbmountright_mirrored_material" rgba="0.301961 0.290196 0.262745 1"/>
+    <material name="servo_material" rgba="0.262745 0.282353 0.301961 1"/>
+    <material name="thumbmountright_mirrored__2_material" rgba="0.301961 0.290196 0.262745 1"/>
+    <material name="palm_material" rgba="0.301961 0.290196 0.262745 1"/>
+    <material name="forearm_material" rgba="0.301961 0.290196 0.262745 1"/>
+    <material name="thumbjoint_material" rgba="0.301961 0.290196 0.262745 1"/>
+    <material name="tendonspool_material" rgba="0.262745 0.282353 0.301961 1"/>
+  </asset>
+  <actuator>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="index_dip" joint="index_dip"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="index_pip" joint="index_pip"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="index_mcp" joint="index_mcp"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="thumb_opp" joint="thumb_opp"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="thumb_mcp" joint="thumb_mcp"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="thumb_pip" joint="thumb_pip"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="thumb_dip" joint="thumb_dip"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="middle_mcp" joint="middle_mcp"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="middle_pip" joint="middle_pip"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="middle_dip" joint="middle_dip"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="ring_mcp" joint="ring_mcp"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="ring_pip" joint="ring_pip"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="ring_dip" joint="ring_dip"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="pinky_mcp" joint="pinky_mcp"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="pinky_pip" joint="pinky_pip"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="pinky_dip" joint="pinky_dip"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_i1" joint="motor_i1"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_p1" joint="motor_p1"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_p2" joint="motor_p2"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_i2" joint="motor_i2"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_t1" joint="motor_t1"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_t2" joint="motor_t2"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_m1" joint="motor_m1"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_r1" joint="motor_r1"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_r2" joint="motor_r2"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_open" joint="motor_open"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_t3" joint="motor_t3"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_m2" joint="motor_m2"/>
+  </actuator>
+  <equality/>
+  <worldbody>
+    <body name="forearm" pos="-0.039000046 -0.0040000002 0.28599995" quat="0.70710678 1.3907362e-15 -0.70710678 -3.7293184e-15" childclass="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand">
+      <body name="wrist" pos="0 0 0" quat="1 0 0 0">
+        <body name="palm" pos="0 0 0" quat="1 0 0 0">
+          <geom type="mesh" class="visual" pos="-0.051 0.013 -0.039" quat="0.707107 -5.86392e-17 0.707107 -1.11022e-16" mesh="palm" material="palm_material"/>
+          <geom type="mesh" class="collision" pos="-0.051 0.013 -0.039" quat="0.707107 -5.86392e-17 0.707107 -1.11022e-16" mesh="palm" material="palm_material"/>
+          <geom type="mesh" class="visual" pos="5.55112e-17 1.38778e-17 -0.07275" quat="0.707107 -8.92783e-17 0.707107 2.22045e-16" mesh="metacarpal" material="metacarpal_material"/>
+          <geom type="mesh" class="collision" pos="5.55112e-17 1.38778e-17 -0.07275" quat="0.707107 -8.92783e-17 0.707107 2.22045e-16" mesh="metacarpal" material="metacarpal_material"/>
+          <geom type="mesh" class="visual" pos="-0.0935355 -0.03425 -0.0005" quat="0.653281 -0.270598 -0.653281 0.270598" mesh="thumbmountright_mirrored" material="thumbmountright_mirrored_material"/>
+          <geom type="mesh" class="collision" pos="-0.0935355 -0.03425 -0.0005" quat="0.653281 -0.270598 -0.653281 0.270598" mesh="thumbmountright_mirrored" material="thumbmountright_mirrored_material"/>
+          <geom type="mesh" class="visual" pos="-0.268675 0.004 -0.072125" quat="1.31965e-16 0.707107 -1.11022e-16 -0.707107" mesh="servo" material="servo_material"/>
+          <geom type="mesh" class="collision" pos="-0.268675 0.004 -0.072125" quat="1.31965e-16 0.707107 -1.11022e-16 -0.707107" mesh="servo" material="servo_material"/>
+          <geom type="mesh" class="visual" pos="-0.268675 0.004 -0.005875" quat="1.2918e-16 0.707107 -1.11022e-16 -0.707107" mesh="servo" material="servo_material"/>
+          <geom type="mesh" class="collision" pos="-0.268675 0.004 -0.005875" quat="1.2918e-16 0.707107 -1.11022e-16 -0.707107" mesh="servo" material="servo_material"/>
+          <geom type="mesh" class="visual" pos="5.55112e-17 3.46945e-18 -0.00525" quat="0.707107 3.49239e-17 0.707107 1.11022e-16" mesh="metacarpal" material="metacarpal_material"/>
+          <geom type="mesh" class="collision" pos="5.55112e-17 3.46945e-18 -0.00525" quat="0.707107 3.49239e-17 0.707107 1.11022e-16" mesh="metacarpal" material="metacarpal_material"/>
+          <geom type="mesh" class="visual" pos="5.55112e-17 1.47451e-17 -0.05025" quat="0.707107 -8.92783e-17 0.707107 2.22045e-16" mesh="metacarpal" material="metacarpal_material"/>
+          <geom type="mesh" class="collision" pos="5.55112e-17 1.47451e-17 -0.05025" quat="0.707107 -8.92783e-17 0.707107 2.22045e-16" mesh="metacarpal" material="metacarpal_material"/>
+          <geom type="mesh" class="visual" pos="-0.215675 -0.001 -0.005875" quat="0.707107 -1.13671e-16 -0.707107 1.66533e-16" mesh="servo" material="servo_material"/>
+          <geom type="mesh" class="collision" pos="-0.215675 -0.001 -0.005875" quat="0.707107 -1.13671e-16 -0.707107 1.66533e-16" mesh="servo" material="servo_material"/>
+          <geom type="mesh" class="visual" pos="-0.0935355 -0.03425 -0.0005" quat="0.653281 -0.270598 -0.653281 0.270598" mesh="thumbmountright_mirrored__2" material="thumbmountright_mirrored__2_material"/>
+          <geom type="mesh" class="collision" pos="-0.0935355 -0.03425 -0.0005" quat="0.653281 -0.270598 -0.653281 0.270598" mesh="thumbmountright_mirrored__2" material="thumbmountright_mirrored__2_material"/>
+          <geom type="mesh" class="visual" pos="5.55112e-17 1.47451e-17 -0.02775" quat="0.707107 -8.92783e-17 0.707107 2.22045e-16" mesh="metacarpal" material="metacarpal_material"/>
+          <geom type="mesh" class="collision" pos="5.55112e-17 1.47451e-17 -0.02775" quat="0.707107 -8.92783e-17 0.707107 2.22045e-16" mesh="metacarpal" material="metacarpal_material"/>
+          <geom type="mesh" class="visual" pos="-0.215675 0.004 -0.072125" quat="1.2918e-16 0.707107 -1.11022e-16 -0.707107" mesh="servo" material="servo_material"/>
+          <geom type="mesh" class="collision" pos="-0.215675 0.004 -0.072125" quat="1.2918e-16 0.707107 -1.11022e-16 -0.707107" mesh="servo" material="servo_material"/>
+          <geom type="mesh" class="visual" pos="-0.162675 0.004 -0.072125" quat="1.2918e-16 0.707107 -1.11022e-16 -0.707107" mesh="servo" material="servo_material"/>
+          <geom type="mesh" class="collision" pos="-0.162675 0.004 -0.072125" quat="1.2918e-16 0.707107 -1.11022e-16 -0.707107" mesh="servo" material="servo_material"/>
+          <geom type="mesh" class="visual" pos="-0.215675 0.004 -0.005875" quat="1.2918e-16 0.707107 -1.11022e-16 -0.707107" mesh="servo" material="servo_material"/>
+          <geom type="mesh" class="collision" pos="-0.215675 0.004 -0.005875" quat="1.2918e-16 0.707107 -1.11022e-16 -0.707107" mesh="servo" material="servo_material"/>
+          <geom type="mesh" class="visual" pos="-0.162675 -0.001 -0.005875" quat="0.707107 -1.13671e-16 -0.707107 1.66533e-16" mesh="servo" material="servo_material"/>
+          <geom type="mesh" class="collision" pos="-0.162675 -0.001 -0.005875" quat="0.707107 -1.13671e-16 -0.707107 1.66533e-16" mesh="servo" material="servo_material"/>
+          <geom type="mesh" class="visual" pos="-0.215675 -0.001 -0.072125" quat="0.707107 -1.13671e-16 -0.707107 1.66533e-16" mesh="servo" material="servo_material"/>
+          <geom type="mesh" class="collision" pos="-0.215675 -0.001 -0.072125" quat="0.707107 -1.13671e-16 -0.707107 1.66533e-16" mesh="servo" material="servo_material"/>
+          <geom type="mesh" class="visual" pos="-0.268675 -0.001 -0.072125" quat="0.707107 -1.13671e-16 -0.707107 1.66533e-16" mesh="servo" material="servo_material"/>
+          <geom type="mesh" class="collision" pos="-0.268675 -0.001 -0.072125" quat="0.707107 -1.13671e-16 -0.707107 1.66533e-16" mesh="servo" material="servo_material"/>
+          <geom type="mesh" class="visual" pos="-0.162675 0.004 -0.005875" quat="1.2918e-16 0.707107 -1.11022e-16 -0.707107" mesh="servo" material="servo_material"/>
+          <geom type="mesh" class="collision" pos="-0.162675 0.004 -0.005875" quat="1.2918e-16 0.707107 -1.11022e-16 -0.707107" mesh="servo" material="servo_material"/>
+          <geom type="mesh" class="visual" pos="-0.268675 -0.001 -0.005875" quat="0.707107 -1.13671e-16 -0.707107 1.66533e-16" mesh="servo" material="servo_material"/>
+          <geom type="mesh" class="collision" pos="-0.268675 -0.001 -0.005875" quat="0.707107 -1.13671e-16 -0.707107 1.66533e-16" mesh="servo" material="servo_material"/>
+          <geom type="mesh" class="visual" pos="-0.162675 -0.001 -0.072125" quat="0.707107 -1.13671e-16 -0.707107 1.66533e-16" mesh="servo" material="servo_material"/>
+          <geom type="mesh" class="collision" pos="-0.162675 -0.001 -0.072125" quat="0.707107 -1.13671e-16 -0.707107 1.66533e-16" mesh="servo" material="servo_material"/>
+          <inertial pos="-0.152403 0.000533268 -0.0379069" mass="0.677719" fullinertia="0.000729799 0.0054891 0.00499688 4.39915e-05 -4.62488e-05 1.92623e-05"/>
+          <body name="index_metacarpal" pos="0 0 0" quat="1 0 0 0">
+            <body name="index_basefinger" pos="0 0 -0.010250068" quat="0.70710591 4.3762697e-07 -4.3762697e-07 0.70710766">
+              <joint name="index_mcp" type="hinge" axis="0 0 1"/>
+              <inertial pos="0.0227837 -0.000185039 0.00499782" mass="0.014394" fullinertia="8.66194e-07 3.29303e-06 3.21906e-06 -3.14024e-08 -4.57246e-10 -2.98196e-09"/>
+              <geom type="mesh" class="visual" pos="1.20598e-10 -0.0225 0.005" quat="0.5 -0.5 0.5 -0.5" mesh="basefinger" material="basefinger_material"/>
+              <geom type="mesh" class="collision" pos="1.20598e-10 -0.0225 0.005" quat="0.5 -0.5 0.5 -0.5" mesh="basefinger" material="basefinger_material"/>
+              <body name="index_midfinger" pos="2.4123122e-10 -0.045000111 -5.5700889e-08" quat="-4.3762697e-07 0.70710766 0.70710591 -4.3762697e-07">
+                <joint name="index_pip" type="hinge" axis="0 0 1"/>
+                <inertial pos="0.0148592 -0.00133982 -0.00525587" mass="0.0135006" fullinertia="7.3515e-07 2.29212e-06 2.61465e-06 1.08761e-08 3.09475e-10 -1.76481e-09"/>
+                <geom type="mesh" class="visual" pos="0.0150471 -0.000855832 -0.005" quat="1 -0 -5.55112e-17 3.08564e-16" mesh="midfinger" material="midfinger_material"/>
+                <geom type="mesh" class="collision" pos="0.0150471 -0.000855832 -0.005" quat="1 -0 -5.55112e-17 3.08564e-16" mesh="midfinger" material="midfinger_material"/>
+                <body name="index_tipfinger" pos="-0.030000099 3.7134041e-08 -0.010250001" quat="1 8.711159e-24 -2.0980041e-17 3.5055356e-17">
+                  <joint name="index_dip" type="hinge" axis="0 0 1"/>
+                  <inertial pos="-0.03375 -0.00293999 0.371714" mass="0.00689679" fullinertia="6.45053e-07 6.96444e-07 3.77703e-07 1.48242e-12 -6.51134e-13 -5.14803e-08"/>
+                  <geom type="mesh" class="visual" pos="0.010728 -0.00105626 -0.01225" quat="1 0 0 2.6086e-16" mesh="tipfinger" material="tipfinger_material"/>
+                  <geom type="mesh" class="collision" pos="0.010728 -0.00105626 -0.01225" quat="1 0 0 2.6086e-16" mesh="tipfinger" material="tipfinger_material"/>
+                </body>
+              </body>
+            </body>
+          </body>
+          <body name="middle_metacarpal" pos="0 0 0" quat="1 0 0 0">
+            <body name="middle_basefinger" pos="4.0537844e-08 1.2316537e-16 -0.032750041" quat="0.70710591 4.3762697e-07 -4.3762697e-07 0.70710766">
+              <joint name="middle_mcp" type="hinge" axis="0 0 1"/>
+              <inertial pos="0.000185039 -0.0222163 0.00499782" mass="0.014394" fullinertia="3.29303e-06 8.66194e-07 3.21906e-06 3.14025e-08 2.98196e-09 -4.57246e-10"/>
+              <geom type="mesh" class="visual" pos="1.20598e-10 -0.0225 0.005" quat="0.5 -0.5 0.5 -0.5" mesh="basefinger" material="basefinger_material"/>
+              <geom type="mesh" class="collision" pos="1.20598e-10 -0.0225 0.005" quat="0.5 -0.5 0.5 -0.5" mesh="basefinger" material="basefinger_material"/>
+              <body name="middle_midfinger" pos="2.4123122e-10 -0.045000111 -5.5700889e-08" quat="-4.3762697e-07 0.70710766 0.70710591 -4.3762697e-07">
+                <joint name="middle_pip" type="hinge" axis="0 0 1"/>
+                <inertial pos="-0.0151408 0.00133982 -0.00499413" mass="0.0135006" fullinertia="7.3515e-07 2.29212e-06 2.61465e-06 -1.08761e-08 -3.09475e-10 -1.76481e-09"/>
+                <geom type="mesh" class="visual" pos="0.0150471 -0.000855832 -0.005" quat="1 -0 -5.55112e-17 3.08564e-16" mesh="midfinger" material="midfinger_material"/>
+                <geom type="mesh" class="collision" pos="0.0150471 -0.000855832 -0.005" quat="1 -0 -5.55112e-17 3.08564e-16" mesh="midfinger" material="midfinger_material"/>
+                <body name="middle_tipfinger" pos="-0.030000099 3.7134041e-08 -0.010250001" quat="1 8.711159e-24 -2.0980041e-17 3.5055356e-17">
+                  <joint name="middle_dip" type="hinge" axis="0 0 1"/>
+                  <inertial pos="-0.0107136 0.00106001 0.00524999" mass="0.00689679" fullinertia="3.77703e-07 6.96444e-07 6.45053e-07 5.14803e-08 6.51134e-13 1.48242e-12"/>
+                  <geom type="mesh" class="visual" pos="0.010728 -0.00105626 -0.01225" quat="1 0 0 2.6086e-16" mesh="tipfinger" material="tipfinger_material"/>
+                  <geom type="mesh" class="collision" pos="0.010728 -0.00105626 -0.01225" quat="1 0 0 2.6086e-16" mesh="tipfinger" material="tipfinger_material"/>
+                </body>
+              </body>
+            </body>
+          </body>
+          <body name="ring_metacarpal" pos="0 0 0" quat="1 0 0 0">
+            <body name="ring_basefinger" pos="6.8388271e-08 1.9862584e-16 -0.055250068" quat="0.70710591 4.3762697e-07 -4.3762697e-07 0.70710766">
+              <joint name="ring_mcp" type="hinge" axis="0 0 1"/>
+              <inertial pos="0.000185039 -0.0222163 0.00499782" mass="0.014394" fullinertia="3.29303e-06 8.66194e-07 3.21906e-06 3.14025e-08 2.98196e-09 -4.57246e-10"/>
+              <geom type="mesh" class="visual" pos="1.20598e-10 -0.0225 0.005" quat="0.5 -0.5 0.5 -0.5" mesh="basefinger" material="basefinger_material"/>
+              <geom type="mesh" class="collision" pos="1.20598e-10 -0.0225 0.005" quat="0.5 -0.5 0.5 -0.5" mesh="basefinger" material="basefinger_material"/>
+              <body name="ring_midfinger" pos="2.4123122e-10 -0.045000111 -5.5700889e-08" quat="-4.3762697e-07 0.70710766 0.70710591 -4.3762697e-07">
+                <joint name="ring_pip" type="hinge" axis="0 0 1"/>
+                <inertial pos="-0.0151408 0.00133982 -0.00499413" mass="0.0135006" fullinertia="7.3515e-07 2.29212e-06 2.61465e-06 -1.08761e-08 -3.09475e-10 -1.76481e-09"/>
+                <geom type="mesh" class="visual" pos="0.0150471 -0.000855832 -0.005" quat="1 -0 -5.55112e-17 3.08564e-16" mesh="midfinger" material="midfinger_material"/>
+                <geom type="mesh" class="collision" pos="0.0150471 -0.000855832 -0.005" quat="1 -0 -5.55112e-17 3.08564e-16" mesh="midfinger" material="midfinger_material"/>
+                <body name="ring_tipfinger" pos="-0.030000099 3.7134041e-08 -0.010250001" quat="1 5.3248275e-17 2.2204514e-16 2.7755638e-16">
+                  <joint name="ring_dip" type="hinge" axis="0 0 1"/>
+                  <inertial pos="-0.0107136 0.00106001 0.00524999" mass="0.00689679" fullinertia="3.77703e-07 6.96444e-07 6.45053e-07 5.14803e-08 6.51134e-13 1.48242e-12"/>
+                  <geom type="mesh" class="visual" pos="0.010728 -0.00105626 -0.01225" quat="1 0 -3.33067e-16 -1.32349e-23" mesh="tipfinger" material="tipfinger_material"/>
+                  <geom type="mesh" class="collision" pos="0.010728 -0.00105626 -0.01225" quat="1 0 -3.33067e-16 -1.32349e-23" mesh="tipfinger" material="tipfinger_material"/>
+                </body>
+              </body>
+            </body>
+          </body>
+          <body name="pinky_metacarpal" pos="0 0 0" quat="1 0 0 0">
+            <body name="pinky_basefinger" pos="9.6238699e-08 2.7235159e-16 -0.077750096" quat="0.70710591 4.3762697e-07 -4.3762697e-07 0.70710766">
+              <joint name="pinky_mcp" type="hinge" axis="0 0 1"/>
+              <inertial pos="0.000185039 -0.0222163 0.00499782" mass="0.014394" fullinertia="3.29303e-06 8.66194e-07 3.21906e-06 3.14025e-08 2.98196e-09 -4.57246e-10"/>
+              <geom type="mesh" class="visual" pos="1.20598e-10 -0.0225 0.005" quat="0.5 -0.5 0.5 -0.5" mesh="basefinger" material="basefinger_material"/>
+              <geom type="mesh" class="collision" pos="1.20598e-10 -0.0225 0.005" quat="0.5 -0.5 0.5 -0.5" mesh="basefinger" material="basefinger_material"/>
+              <body name="pinky_midfinger" pos="2.4123122e-10 -0.045000111 -5.5700889e-08" quat="-4.3762697e-07 0.70710766 0.70710591 -4.3762697e-07">
+                <joint name="pinky_pip" type="hinge" axis="0 0 1"/>
+                <inertial pos="-0.0151408 0.00133982 -0.00499413" mass="0.0135006" fullinertia="7.3515e-07 2.29212e-06 2.61465e-06 -1.08761e-08 -3.09475e-10 -1.76481e-09"/>
+                <geom type="mesh" class="visual" pos="0.0150471 -0.000855832 -0.005" quat="1 -0 -5.55112e-17 3.08564e-16" mesh="midfinger" material="midfinger_material"/>
+                <geom type="mesh" class="collision" pos="0.0150471 -0.000855832 -0.005" quat="1 -0 -5.55112e-17 3.08564e-16" mesh="midfinger" material="midfinger_material"/>
+                <body name="pinky_tipfinger" pos="-0.030000111 3.7134041e-08 3.7133995e-08" quat="0 1 0 0">
+                  <joint name="pinky_dip" type="hinge" axis="0 0 1"/>
+                  <inertial pos="-0.0107425 0.000710076 0.00500001" mass="0.00689679" fullinertia="3.69618e-07 7.04528e-07 6.45053e-07 2.81412e-09 -3.99392e-13 1.56908e-12"/>
+                  <geom type="mesh" class="visual" pos="0.010756 -0.000716124 0.0225" quat="2.19827e-17 0.996614 -0.0822186 3.21998e-16" mesh="tipfinger" material="tipfinger_material"/>
+                  <geom type="mesh" class="collision" pos="0.010756 -0.000716124 0.0225" quat="2.19827e-17 0.996614 -0.0822186 3.21998e-16" mesh="tipfinger" material="tipfinger_material"/>
+                </body>
+              </body>
+            </body>
+          </body>
+          <body name="thumb_metacarpal" pos="0 0 0" quat="1 0 0 0">
+            <body name="thumb_joint" pos="-0.0864646 -0.029250072 -0.0054998998" quat="0.49983223 -0.51815008 0.69391676 -0.012952062">
+              <joint name="thumb_opp" type="hinge" axis="0 0 1"/>
+              <inertial pos="-1.01453e-09 -0.0143911 -0.0100207" mass="0.00570394" fullinertia="7.92066e-07 1.83923e-07 6.98301e-07 -7.18514e-14 -1.68427e-14 4.09261e-09"/>
+              <geom type="mesh" class="visual" pos="-1.21431e-17 0 -0.01" quat="0.707107 0.707107 0 -2.45448e-18" mesh="thumbjoint" material="thumbjoint_material"/>
+              <geom type="mesh" class="collision" pos="-1.21431e-17 0 -0.01" quat="0.707107 0.707107 0 -2.45448e-18" mesh="thumbjoint" material="thumbjoint_material"/>
+              <body name="thumb_base" pos="-0.0052499912 -0.022000011 -0.010000033" quat="-0.30699398 0.63698851 -0.30699344 0.6369893">
+                <joint name="thumb_mcp" type="hinge" axis="0 0 1"/>
+                <inertial pos="0.0222163 0.000185039 0.00524782" mass="0.014394" fullinertia="8.66194e-07 3.29303e-06 3.21906e-06 -3.14025e-08 4.57246e-10 2.98196e-09"/>
+                <geom type="mesh" class="visual" pos="0.0225 1.38778e-17 0.00525" quat="0.707107 -0.707107 -0 7.51993e-19" mesh="basefinger" material="basefinger_material"/>
+                <geom type="mesh" class="collision" pos="0.0225 1.38778e-17 0.00525" quat="0.707107 -0.707107 -0 7.51993e-19" mesh="basefinger" material="basefinger_material"/>
+                <body name="thumb_mid" pos="0.045000099 -7.3546832e-09 0.010500028" quat="1 7.2977539e-18 1.0889338e-16 -5.5314059e-17">
+                  <joint name="thumb_pip" type="hinge" axis="0 0 1"/>
+                  <inertial pos="0.0151611 -0.00108556 -0.00525587" mass="0.0135006" fullinertia="7.77958e-07 2.24931e-06 2.61465e-06 2.54828e-07 -2.48201e-11 1.79157e-09"/>
+                  <geom type="mesh" class="visual" pos="-0.0149916 0.00154849 -0.00525" quat="6.44693e-15 0.0797855 0.996812 -7.4038e-15" mesh="midfinger" material="midfinger_material"/>
+                  <geom type="mesh" class="collision" pos="-0.0149916 0.00154849 -0.00525" quat="6.44693e-15 0.0797855 0.996812 -7.4038e-15" mesh="midfinger" material="midfinger_material"/>
+                  <body name="thumb_tip" pos="0.029618169 -0.0047719104 -0.010500042" quat="0.16320905 7.4913411e-08 2.3353497e-08 0.98659151">
+                    <joint name="thumb_dip" type="hinge" axis="0 0 1"/>
+                    <inertial pos="-0.0107136 -0.00106001 0.00525001" mass="0.00689679" fullinertia="3.77703e-07 6.96444e-07 6.45053e-07 -5.14803e-08 -6.51134e-13 1.48242e-12"/>
+                    <geom type="mesh" class="visual" pos="0.010728 0.00105626 0.02275" quat="0 1 0 0" mesh="tipfinger" material="tipfinger_material"/>
+                    <geom type="mesh" class="collision" pos="0.010728 0.00105626 0.02275" quat="0 1 0 0" mesh="tipfinger" material="tipfinger_material"/>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+          <body name="tendonspool" pos="-0.1681502 -0.033550083 -0.0058747991" quat="0.5 -0.5 0.5 0.5">
+            <joint axis="0 0 1" name="motor_i1" type="hinge"/>
+            <inertial pos="1.64632e-12 -3.14427e-05 -0.00396857" mass="0.00547657" fullinertia="2.96815e-07 2.98102e-07 5.12384e-07 -1.93097e-16 5.08146e-16 1.08514e-10"/>
+            <geom type="mesh" class="visual" pos="0 0 -0.008" quat="0.707107 -0.707107 0 -6.93863e-35" mesh="tendonspool" material="tendonspool_material"/>
+            <geom type="mesh" class="collision" pos="0 0 -0.008" quat="0.707107 -0.707107 0 -6.93863e-35" mesh="tendonspool" material="tendonspool_material"/>
+          </body>
+          <body name="tendonspool_2" pos="-0.16815012 -0.033550083 -0.072124881" quat="0.5 -0.5 0.5 0.5">
+            <joint axis="0 0 1" name="motor_p1" type="hinge"/>
+            <inertial pos="1.64632e-12 -3.14427e-05 -0.00396857" mass="0.00547657" fullinertia="2.96815e-07 2.98102e-07 5.12384e-07 -1.93097e-16 5.08146e-16 1.08514e-10"/>
+            <geom type="mesh" class="visual" pos="0 0 -0.008" quat="0.707107 -0.707107 -0 8.35393e-34" mesh="tendonspool" material="tendonspool_material"/>
+            <geom type="mesh" class="collision" pos="0 0 -0.008" quat="0.707107 -0.707107 -0 8.35393e-34" mesh="tendonspool" material="tendonspool_material"/>
+          </body>
+          <body name="tendonspool_3" pos="-0.22115018 -0.033550083 -0.072124816" quat="0.5 -0.5 0.5 0.5">
+            <joint axis="0 0 1" name="motor_p2" type="hinge"/>
+            <inertial pos="1.64632e-12 -3.14427e-05 -0.00396857" mass="0.00547657" fullinertia="2.96815e-07 2.98102e-07 5.12384e-07 -1.93097e-16 5.08146e-16 1.08514e-10"/>
+            <geom type="mesh" class="visual" pos="6.93889e-18 0 -0.008" quat="0.707107 -0.707107 -0 3.17199e-33" mesh="tendonspool" material="tendonspool_material"/>
+            <geom type="mesh" class="collision" pos="6.93889e-18 0 -0.008" quat="0.707107 -0.707107 -0 3.17199e-33" mesh="tendonspool" material="tendonspool_material"/>
+          </body>
+          <body name="tendonspool_4" pos="-0.22115027 -0.033550083 -0.0058747335" quat="0.5 -0.5 0.5 0.5">
+            <joint axis="0 0 1" name="motor_i2" type="hinge"/>
+            <inertial pos="1.64632e-12 -3.14427e-05 -0.00396857" mass="0.00547657" fullinertia="2.96815e-07 2.98102e-07 5.12384e-07 -1.93097e-16 5.08146e-16 1.08514e-10"/>
+            <geom type="mesh" class="visual" pos="0 0 -0.008" quat="0.707107 -0.707107 -0 8.35393e-34" mesh="tendonspool" material="tendonspool_material"/>
+            <geom type="mesh" class="collision" pos="0 0 -0.008" quat="0.707107 -0.707107 -0 8.35393e-34" mesh="tendonspool" material="tendonspool_material"/>
+          </body>
+          <body name="tendonspool_5" pos="-0.27415033 -0.033550083 -0.0058746679" quat="0.5 -0.5 0.5 0.5">
+            <joint axis="0 0 1" name="motor_t1" type="hinge"/>
+            <inertial pos="1.64632e-12 -3.14427e-05 -0.00396857" mass="0.00547657" fullinertia="2.96815e-07 2.98102e-07 5.12384e-07 -1.93097e-16 5.08146e-16 1.08514e-10"/>
+            <geom type="mesh" class="visual" pos="0 0 -0.008" quat="0.707107 -0.707107 -0 8.35393e-34" mesh="tendonspool" material="tendonspool_material"/>
+            <geom type="mesh" class="collision" pos="0 0 -0.008" quat="0.707107 -0.707107 -0 8.35393e-34" mesh="tendonspool" material="tendonspool_material"/>
+          </body>
+          <body name="tendonspool_6" pos="-0.27415025 -0.033550083 -0.07212475" quat="0.5 -0.5 0.5 0.5">
+            <joint axis="0 0 1" name="motor_t2" type="hinge"/>
+            <inertial pos="1.64632e-12 6.60507e-05 -0.00396857" mass="0.00547657" fullinertia="2.96815e-07 2.98102e-07 5.12384e-07 -1.93097e-16 5.08146e-16 1.08514e-10"/>
+            <geom type="mesh" class="visual" pos="0 9.74934e-05 -0.008" quat="0.707107 -0.707107 -0 8.35393e-34" mesh="tendonspool" material="tendonspool_material"/>
+            <geom type="mesh" class="collision" pos="0 9.74934e-05 -0.008" quat="0.707107 -0.707107 -0 8.35393e-34" mesh="tendonspool" material="tendonspool_material"/>
+          </body>
+          <body name="tendonspool_7" pos="-0.1681502 0.03655009 -0.0058747991" quat="0.5 0.5 -0.5 0.5">
+            <joint axis="0 0 1" name="motor_m1" type="hinge"/>
+            <inertial pos="1.64632e-12 -3.14427e-05 -0.00396857" mass="0.00547657" fullinertia="2.96815e-07 2.98102e-07 5.12384e-07 -1.93097e-16 5.08146e-16 1.08514e-10"/>
+            <geom type="mesh" class="visual" pos="6.93889e-18 1.38778e-17 -0.008" quat="0.707107 -0.707107 -0 -5.41048e-35" mesh="tendonspool" material="tendonspool_material"/>
+            <geom type="mesh" class="collision" pos="6.93889e-18 1.38778e-17 -0.008" quat="0.707107 -0.707107 -0 -5.41048e-35" mesh="tendonspool" material="tendonspool_material"/>
+          </body>
+          <body name="tendonspool_8" pos="-0.16815012 0.03655009 -0.072124881" quat="0.5 0.5 -0.5 0.5">
+            <joint axis="0 0 1" name="motor_r1" type="hinge"/>
+            <inertial pos="1.64631e-12 -3.14427e-05 -0.00396857" mass="0.00547657" fullinertia="2.96815e-07 2.98102e-07 5.12384e-07 -1.93097e-16 5.08146e-16 1.08514e-10"/>
+            <geom type="mesh" class="visual" pos="-6.93889e-18 1.38778e-17 -0.008" quat="0.707107 -0.707107 0 -5.89636e-33" mesh="tendonspool" material="tendonspool_material"/>
+            <geom type="mesh" class="collision" pos="-6.93889e-18 1.38778e-17 -0.008" quat="0.707107 -0.707107 0 -5.89636e-33" mesh="tendonspool" material="tendonspool_material"/>
+          </body>
+          <body name="tendonspool_9" pos="-0.22115018 0.03655009 -0.072124816" quat="0.5 0.5 -0.5 0.5">
+            <joint axis="0 0 1" name="motor_r2" type="hinge"/>
+            <inertial pos="1.64632e-12 -3.14427e-05 -0.00396857" mass="0.00547657" fullinertia="2.96815e-07 2.98102e-07 5.12384e-07 -1.93097e-16 5.08146e-16 1.08514e-10"/>
+            <geom type="mesh" class="visual" pos="0 1.38778e-17 -0.008" quat="0.707107 -0.707107 0 -5.89636e-33" mesh="tendonspool" material="tendonspool_material"/>
+            <geom type="mesh" class="collision" pos="0 1.38778e-17 -0.008" quat="0.707107 -0.707107 0 -5.89636e-33" mesh="tendonspool" material="tendonspool_material"/>
+          </body>
+          <body name="tendonspool_10" pos="-0.27415025 0.03655009 -0.07212475" quat="0.5 0.5 -0.5 0.5">
+            <joint axis="0 0 1" name="motor_open" type="hinge"/>
+            <inertial pos="1.64632e-12 6.60507e-05 -0.00396857" mass="0.00547657" fullinertia="2.96815e-07 2.98102e-07 5.12384e-07 -1.93097e-16 5.08146e-16 1.08514e-10"/>
+            <geom type="mesh" class="visual" pos="0 9.74934e-05 -0.008" quat="0.707107 -0.707107 0 1.33173e-32" mesh="tendonspool" material="tendonspool_material"/>
+            <geom type="mesh" class="collision" pos="0 9.74934e-05 -0.008" quat="0.707107 -0.707107 0 1.33173e-32" mesh="tendonspool" material="tendonspool_material"/>
+          </body>
+          <body name="tendonspool_11" pos="-0.27415033 0.03655009 -0.0058746679" quat="0.5 0.5 -0.5 0.5">
+            <joint axis="0 0 1" name="motor_t3" type="hinge"/>
+            <inertial pos="1.64632e-12 6.60507e-05 -0.00396857" mass="0.00547657" fullinertia="2.96815e-07 2.98102e-07 5.12384e-07 -1.93097e-16 5.08146e-16 1.08514e-10"/>
+            <geom type="mesh" class="visual" pos="0 9.74934e-05 -0.008" quat="0.707107 -0.707107 0 -5.89636e-33" mesh="tendonspool" material="tendonspool_material"/>
+            <geom type="mesh" class="collision" pos="0 9.74934e-05 -0.008" quat="0.707107 -0.707107 0 -5.89636e-33" mesh="tendonspool" material="tendonspool_material"/>
+          </body>
+          <body name="tendonspool_12" pos="-0.22115027 0.03655009 -0.0058747335" quat="0.5 0.5 -0.5 0.5">
+            <joint axis="0 0 1" name="motor_m2" type="hinge"/>
+            <inertial pos="1.64632e-12 -3.14427e-05 -0.00396857" mass="0.00547657" fullinertia="2.96815e-07 2.98102e-07 5.12384e-07 -1.93097e-16 5.08146e-16 1.08514e-10"/>
+            <geom type="mesh" class="visual" pos="0 0 -0.008" quat="0.707107 -0.707107 -0 1.35493e-32" mesh="tendonspool" material="tendonspool_material"/>
+            <geom type="mesh" class="collision" pos="0 0 -0.008" quat="0.707107 -0.707107 -0 1.35493e-32" mesh="tendonspool" material="tendonspool_material"/>
+          </body>
+        </body>
+        <geom type="mesh" class="visual" pos="-0.094 -0.004 -0.039" quat="3.05977e-17 -0.707107 0 -0.707107" mesh="wrist" material="wrist_material"/>
+        <geom type="mesh" class="collision" pos="-0.094 -0.004 -0.039" quat="3.05977e-17 -0.707107 0 -0.707107" mesh="wrist" material="wrist_material"/>
+      </body>
+      <geom type="mesh" class="visual" pos="-0.123 0.0015 -0.039" quat="0.707107 -5.17541e-17 0.707107 -0" mesh="forearm" material="forearm_material"/>
+      <geom type="mesh" class="collision" pos="-0.123 0.0015 -0.039" quat="0.707107 -5.17541e-17 0.707107 -0" mesh="forearm" material="forearm_material"/>
+    </body>
+  </worldbody>
+</mujoco>
