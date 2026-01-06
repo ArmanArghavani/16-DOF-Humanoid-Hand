@@ -16,7 +16,7 @@
   <asset>
     <mesh file="midfinger.stl"/>
     <mesh file="palm.stl"/>
-    <mesh file="forearm.stl"/>
+    <mesh file="forearm.stl" scale="0.001 0.001 0.001"/>
     <mesh file="tendonspool.stl"/>
     <mesh file="thumbmountright_mirrored.stl"/>
     <mesh file="basefinger.stl"/>
