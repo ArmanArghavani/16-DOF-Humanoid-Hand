@@ -26,6 +26,7 @@
     <mesh file="thumbmountright_mirrored__2.stl"/>
     <mesh file="metacarpal.stl"/>
     <mesh file="thumbjoint.stl"/>
+    <mesh file="bowden_sites.stl"/>
     <material name="tipfinger_material" rgba="0.301961 0.290196 0.262745 1"/>
     <material name="midfinger_material" rgba="0.301961 0.290196 0.262745 1"/>
     <material name="basefinger_material" rgba="0.301961 0.290196 0.262745 1"/>
@@ -38,6 +39,7 @@
     <material name="forearm_material" rgba="0.301961 0.290196 0.262745 1"/>
     <material name="thumbjoint_material" rgba="0.301961 0.290196 0.262745 1"/>
     <material name="tendonspool_material" rgba="0.262745 0.282353 0.301961 1"/>
+    <material name="bowden_sites_material" rgba="0.301961 0.290196 0.262745 1"/>
   </asset>
   <worldbody>
     <body name="forearm" pos="-0.039000046 -0.0040000002 0.28599995" quat="0.70710678 1.3907362e-15 -0.70710678 -3.7293184e-15" childclass="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand">
@@ -90,7 +92,7 @@
             <site name="index_metacarpal_top2_flex" pos="-0.015 -0.009 -0.00525" size="0.0005" rgba="1 0 0 1"/>
             <site name="index_metacarpal_top1_flex" pos="-0.006  -0.009 -0.00525" size="0.0005" rgba="1 0 1 1"/>
             <site name="index_metacarpal_bottom_ext" pos="-0.09 0.006 -0.00525" size="0.0005" rgba="0 0 1 1"/>
-            <site name="index_metacarpal_top_ext" pos="0.005 0.006 -0.00525" size="0.0005" rgba="0 0 1 1"/>
+            <site name="index_metacarpal_top_ext" pos="0.01 0.006 -0.00525" size="0.0005" rgba="0 0 1 1"/>
 
             <body name="index_basefinger" pos="0 0 -0.010250068" quat="0.70710591 4.3762697e-07 -4.3762697e-07 0.70710766">
               <joint name="index_mcp" type="hinge" axis="0 0 1" limited="true" range="-1.57080 0" damping="0.07"/>
@@ -103,6 +105,8 @@
                           contype="0" conaffinity="0" group="2"/>
                     <site name="index_mcp_flex" pos="-0.008 -0.0165 0" size="0.0005" rgba="1 0 0 1"/>
                     <site name="index_mcp_ext" pos="0.008 -0.0165 0" size="0.0005" rgba="0 0 1 1"/>
+                    <site name="index_mcp_ext_top1" pos="0.011 -0.05 0" size="0.0005" rgba="0 0 1 1"/>
+                    <site name="index_mcp_ext_top2" pos="0.011 -0.04 0" size="0.0005" rgba="0 0 1 1"/>
                    </body>
               
               <body name="index_midfinger" pos="2.4123122e-10 -0.045000111 -5.5700889e-08" quat="-4.3762697e-07 0.70710766 0.70710591 -4.3762697e-07">
@@ -114,7 +118,8 @@
                     <geom name="index_pip_pulley" type="cylinder" size="0.01 0.0005" rgba="0.5 0.5 0.5 0.5" 
                           contype="0" conaffinity="0" group="2"/>
                     <site name="index_pip_flex" pos="-0.01 -0.002 0" size="0.0005" rgba="1 0 0 1"/>
-                    <site name="index_pip_ext" pos="-0.01 0.002 0" size="0.0005" rgba="0 0 1 1"/>
+                    <site name="index_pip_ext" pos="-0.01 0.006 0" size="0.0005" rgba="0 0 1 1"/>
+                    <site name="index_pip_ext_top" pos="-0.03 0.011 0" size="0.0005" rgba="0 0 1 1"/>
                    </body>
                 <body name="index_tipfinger" pos="-0.030000099 3.7134041e-08 -0.010250001" quat="1 8.711159e-24 -2.0980041e-17 3.5055356e-17">
                   <joint name="index_dip" type="hinge" axis="0 0 1" limited="true" range="0 1.22173" damping="0.07"/>
@@ -344,18 +349,22 @@
             <body name="index_dip_spool" pos="0 0 -0.007" quat="1 0 0 0">
                     <geom name="index_dip_spool" type="cylinder" size="0.006 0.001" rgba="0.5 0.5 0.5 0.5" 
                           contype="0" conaffinity="0" group="2"/>
-                    <site name="index_dip_spool" pos="0 0.005 0" size="0.0005" rgba="0 1 0 1"/>
+                    <site name="index_dip_spool" pos="-0.006 0 0" size="0.0005" rgba="0 1 0 1"/>
             </body>
             <body name="index_pip_spool" pos="0 0 -0.003" quat="1 0 0 0">
                     <geom name="index_pip_spool" type="cylinder" size="0.012 0.001" rgba="0.5 0.5 0.5 0.5" 
                           contype="0" conaffinity="0" group="2"/>
-                    <site name="index_pip_spool" pos="0 0.012 0" size="0.0005" rgba="0 1 0 1"/>
+                    <site name="index_pip_spool" pos="-0.012 0 0" size="0.0005" rgba="0 1 0 1"/>
             </body>
           </body>
-          <site name="bowden_index_dip_flex" pos="-0.1681502 -0.0405 -0.02" size="0.001" rgba="0 1 0 1"/>
-          <site name="bowden_index_pip_flex" pos="-0.1681502 -0.0365 -0.02" size="0.001" rgba="0 1 0 1"/>
-          <site name="bowden_index_dip_ext" pos="-0.168 -0.0405 0.00583" size="0.001" rgba="0 1 0 1"/>
-          <site name="bowden_index_pip_ext" pos="-0.168 -0.0365 0.00583" size="0.001" rgba="0 1 0 1"/>
+          <site name="bowden_index_dip_flex" pos="-0.1525 -0.0405 -0.0345" size="0.001" rgba="0 1 0 1"/>
+          <site name="bowden_index_dip_flex_2" pos="-0.1525 -0.0405 -0.024" size="0.001" rgba="0 1 0 1"/>
+          <site name="bowden_index_pip_flex" pos="-0.1465 -0.0365 -0.0345" size="0.001" rgba="0 1 0 1"/>
+          <site name="bowden_index_pip_flex_2" pos="-0.1465 -0.0365 -0.024" size="0.001" rgba="0 1 0 1"/>
+          <site name="bowden_index_dip_ext" pos="-0.1725 -0.0405 -0.0345" size="0.001" rgba="0 1 0 1"/>
+          <site name="bowden_index_dip_ext_2" pos="-0.1725 -0.0405 -0.024" size="0.001" rgba="0 1 0 1"/>
+          <site name="bowden_index_pip_ext" pos="-0.1785 -0.0365 -0.0345" size="0.001" rgba="0 1 0 1"/>
+          <site name="bowden_index_pip_ext_2" pos="-0.1785 -0.0365 -0.024" size="0.001" rgba="0 1 0 1"/>
 
           <body name="tendonspool_2" pos="-0.16815012 -0.033550083 -0.072124881" quat="0.5 -0.5 0.5 0.5">
             <joint axis="0 0 1" name="motor_p1" type="hinge"/>
@@ -460,11 +469,19 @@
       </body>
       <geom type="mesh" class="visual" pos="-0.123 0.0015 -0.039" quat="0.707107 -5.17541e-17 0.707107 -0" mesh="forearm" material="forearm_material"/>
       <geom type="mesh" class="collision" pos="-0.123 0.0015 -0.039" quat="0.707107 -5.17541e-17 0.707107 -0" mesh="forearm" material="forearm_material"/>
+      <geom type="mesh" class="visual" pos="-0.1625 -0.001 -0.049" quat="0.707107 -5.17541e-17 0.707107 -0" mesh="bowden_sites" material="bowden_sites_material"/>
+      <geom name="bowden_mesh_p1" type="mesh" class="collision" pos="-0.1625 -0.001 -0.049" quat="0.707107 -5.17541e-17 0.707107 -0" mesh="bowden_sites" material="bowden_sites_material"/>
+      <geom type="mesh" class="visual" pos="-0.1625 -0.001 -0.029" quat="0.707107 -5.17541e-17 0.707107 -0" mesh="bowden_sites" material="bowden_sites_material"/>
+      <geom name="bowden_mesh_i1" type="mesh" class="collision" pos="-0.1625 -0.001 -0.029" quat="0.707107 -5.17541e-17 0.707107 -0" mesh="bowden_sites" material="bowden_sites_material"/>
+      <geom type="mesh" class="visual" pos="-0.2155 -0.001 -0.029" quat="0.707107 -5.17541e-17 0.707107 -0" mesh="bowden_sites" material="bowden_sites_material"/>
+      <geom name="bowden_mesh_i2" type="mesh" class="collision" pos="-0.2155 -0.001 -0.029" quat="0.707107 -5.17541e-17 0.707107 -0" mesh="bowden_sites" material="bowden_sites_material"/>
+       <geom type="mesh" class="visual" pos="-0.2155 -0.001 -0.049" quat="0.707107 -5.17541e-17 0.707107 -0" mesh="bowden_sites" material="bowden_sites_material"/>
+      <geom name="bowden_mesh_p2" type="mesh" class="collision" pos="-0.2155 -0.001 -0.049" quat="0.707107 -5.17541e-17 0.707107 -0" mesh="bowden_sites" material="bowden_sites_material"/>
     </body>
   </worldbody>
 
   <tendon>
-    <spatial name="tendon_index_dip_flex" width="0.0005">
+    <spatial name="tendon_index_dip_flex" width="0.0005" rgba="1 0 0 1">
       <site site="index_dip_flex"/>
       <geom geom="index_dip_pulley"/>
       <site site="index_pip_flex"/>
@@ -476,6 +493,7 @@
       <site site="wrist_center"/>
       <site site="wrist_bottom"/>
       <site site="bowden_index_dip_flex"/>
+      <site site="bowden_index_dip_flex_2"/>
       <geom geom="index_dip_spool"/>
       <site site="index_dip_spool"/>
   </spatial>
@@ -483,7 +501,7 @@
     <joint joint="motor_i1" coef="1"/>
   </fixed>
 
-  <spatial name="tendon_index_pip_flex" width="0.0005">
+  <spatial name="tendon_index_pip_flex" width="0.0005" rgba="1 0 1 1">
       <site site="index_pip_flex"/>
       <geom geom="index_pip_pulley"/>
       <site site="index_mcp_flex"/>
@@ -493,6 +511,7 @@
       <site site="wrist_center"/>
       <site site="wrist_bottom"/>
       <site site="bowden_index_pip_flex"/>
+      <site site="bowden_index_pip_flex_2"/>
       <geom geom="index_pip_spool"/>
       <site site="index_pip_spool"/>
   </spatial>
@@ -500,7 +519,7 @@
     <joint joint="motor_i1" coef="2.09"/>
   </fixed>
 
-  <spatial name="tendon_index_mcp_flex" width="0.0005">
+  <spatial name="tendon_index_mcp_flex" width="0.0005" rgba="0 0 1 1">
       <site site="index_mcp_flex"/>
       <geom geom="index_mcp_pulley"/>
       <site site="index_metacarpal_top2_flex"/>
@@ -515,18 +534,22 @@
     <joint joint="motor_i2" coef="2"/>
   </fixed>
 
-  <spatial name="tendon_index_dip_ext" width="0.0005">
+  <spatial name="tendon_index_dip_ext" width="0.0005" rgba="0 1 0 1">
       <site site="index_dip_ext"/>
       <geom geom="index_dip_pulley"/>
+      <site site="index_pip_ext_top"/>
       <site site="index_pip_ext"/>
       <geom geom="index_pip_pulley"/>
+      <site site="index_mcp_ext_top1"/>
+      <site site="index_mcp_ext_top2"/>
       <site site="index_mcp_ext"/>
       <geom geom="index_mcp_pulley"/>
       <site site="index_metacarpal_top_ext"/>
       <site site="index_metacarpal_bottom_ext"/>
-      <site site="wrist_center"/>
+      <site site="wrist_center"/> 
       <site site="wrist_bottom"/>
       <site site="bowden_index_dip_ext"/>
+      <site site="bowden_index_dip_ext_2"/>
       <geom geom="index_dip_spool"/>
       <site site="index_dip_spool"/>
   </spatial>
@@ -534,9 +557,11 @@
     <joint joint="motor_i1" coef="-1"/>
   </fixed>
 
-  <spatial name="tendon_index_pip_ext" width="0.0005">
+  <spatial name="tendon_index_pip_ext" width="0.0005" rgba="0 1 1 1">
       <site site="index_pip_ext"/>
       <geom geom="index_pip_pulley"/>
+      <site site="index_mcp_ext_top1"/>
+      <site site="index_mcp_ext_top2"/>
       <site site="index_mcp_ext"/>
       <geom geom="index_mcp_pulley"/>
       <site site="index_metacarpal_top_ext"/>
@@ -544,6 +569,7 @@
       <site site="wrist_center"/>
       <site site="wrist_bottom"/>
       <site site="bowden_index_pip_ext"/>
+      <site site="bowden_index_pip_ext_2"/>
       <geom geom="index_pip_spool"/>
       <site site="index_pip_spool"/>
   </spatial>
@@ -551,7 +577,7 @@
     <joint joint="motor_i1" coef="-2.09"/>
   </fixed>
 
-  <spatial name="tendon_index_mcp_ext" width="0.0005">
+  <spatial name="tendon_index_mcp_ext" width="0.0005" rgba="1 1 0 1">
       <site site="index_mcp_ext"/>
       <geom geom="index_mcp_pulley"/>
       <site site="index_metacarpal_top_ext"/>
@@ -838,7 +864,7 @@
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_i1" joint="motor_i1"/>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_p1" joint="motor_p1"/>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_p2" joint="motor_p2"/>
-    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_i2" joint="motor_i2"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_i2" joint="motor_i2" ctrlrange="-50 50"/>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_t1" joint="motor_t1"/>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_t2" joint="motor_t2"/>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_m1" joint="motor_m1"/>
