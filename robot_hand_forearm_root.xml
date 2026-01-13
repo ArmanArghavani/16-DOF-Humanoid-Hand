@@ -316,7 +316,7 @@
               <site name="thumb_metacarpal_bottom_ext" pos="0 0 -0.0145" size="0.0005" rgba="1 0 1 1"/>
               
               <body name="thumb_base" pos="-0.0052499912 -0.022000011 -0.010000033" quat="-0.30699398 0.63698851 -0.30699344 0.6369893">
-                <joint name="thumb_mcp" type="hinge" axis="0 0 1" limited="true" range="-0.1 0.3" damping="0.07"/>
+                <joint name="thumb_mcp" type="hinge" axis="0 0 1" limited="true" range="-1 1.5" damping="0.07"/>
                 <inertial pos="0.0222163 0.000185039 0.00524782" mass="0.014394" fullinertia="8.66194e-07 3.29303e-06 3.21906e-06 -3.14025e-08 4.57246e-10 2.98196e-09"/>
                 <geom type="mesh" class="visual" pos="0.0225 1.38778e-17 0.00525" quat="0.707107 -0.707107 -0 7.51993e-19" mesh="basefinger" material="basefinger_material"/>
                 <geom type="mesh" class="collision" pos="0.0225 1.38778e-17 0.00525" quat="0.707107 -0.707107 -0 7.51993e-19" mesh="basefinger" material="basefinger_material"/>
@@ -331,7 +331,7 @@
                    </body>
                 
                 <body name="thumb_mid" pos="0.045000099 -7.3546832e-09 0.010500028" quat="1 7.2977539e-18 1.0889338e-16 -5.5314059e-17">
-                  <joint name="thumb_pip" type="hinge" axis="0 0 1" limited="true" range="0 0.01" damping="0.07"/>
+                  <joint name="thumb_pip" type="hinge" axis="0 0 1" limited="true" range="-1.91986 0" damping="0.07"/>
                   <inertial pos="0.0151611 -0.00108556 -0.00525587" mass="0.0135006" fullinertia="7.77958e-07 2.24931e-06 2.61465e-06 2.54828e-07 -2.48201e-11 1.79157e-09"/>
                   <geom type="mesh" class="visual" pos="-0.0149916 0.00154849 -0.00525" quat="6.44693e-15 0.0797855 0.996812 -7.4038e-15" mesh="midfinger" material="midfinger_material"/>
                   <geom type="mesh" class="collision" pos="-0.0149916 0.00154849 -0.00525" quat="6.44693e-15 0.0797855 0.996812 -7.4038e-15" mesh="midfinger" material="midfinger_material"/>
@@ -345,7 +345,7 @@
                   </body>
                  
                   <body name="thumb_tip" pos="0.029618169 -0.0047719104 -0.010500042" quat="0.16320905 7.4913411e-08 2.3353497e-08 0.98659151">
-                    <joint name="thumb_dip" type="hinge" axis="0 0 1" limited="true" range="0 1.22173" damping="0.07"/>
+                    <joint name="thumb_dip" type="hinge" axis="0 0 1" limited="true" range="-1.1 0.1" damping="0.07"/>
                     <inertial pos="-0.0107136 -0.00106001 0.00525001" mass="0.00689679" fullinertia="3.77703e-07 6.96444e-07 6.45053e-07 -5.14803e-08 -6.51134e-13 1.48242e-12"/>
                     <geom type="mesh" class="visual" pos="0.010728 0.00105626 0.02275" quat="0 1 0 0" mesh="tipfinger" material="tipfinger_material"/>
                     <geom type="mesh" class="collision" pos="0.010728 0.00105626 0.02275" quat="0 1 0 0" mesh="tipfinger" material="tipfinger_material"/>
