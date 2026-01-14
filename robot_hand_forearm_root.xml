@@ -42,7 +42,7 @@
     <material name="bowden_sites_material" rgba="0.301961 0.290196 0.262745 1"/>
   </asset>
   <worldbody>
-    <body name="forearm" pos="-0.039000046 -0.0040000002 0.28599995" quat="0.70710678 1.3907362e-15 -0.70710678 -3.7293184e-15" childclass="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand">
+    <body name="forearm" pos="-0.039000046 -0.0040000002 0.5" quat="0.70710678 1.3907362e-15 -0.70710678 -3.7293184e-15" childclass="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand">
       <body name="wrist" pos="0 0 0" quat="1 0 0 0">
         <site name="wrist_center" pos="-0.119 0 -0.039" size="0.0005" rgba="0 1 0 1"/>
         <site name="wrist_bottom" pos="-0.126 0 -0.039" size="0.0005" rgba="0 1 0 1"/>
@@ -314,6 +314,14 @@
               <site name="thumb_metacarpal_top_ext" pos="0 -0.010 -0.0145" size="0.0005" rgba="1 0 1 1"/>
               <site name="thumb_metacarpal_top2_ext" pos="0 -0.03 -0.018" size="0.0005" rgba="1 0 1 1"/>
               <site name="thumb_metacarpal_bottom_ext" pos="0 0 -0.0145" size="0.0005" rgba="1 0 1 1"/>
+              <site name="thumb_adduction" pos="0.002 -0.011 -0.0105" size="0.0005" rgba="1 1 0 1"/>
+              <site name="thumb_abduction" pos="-0.002 -0.011 -0.0105" size="0.0005" rgba="1 1 0 1"/>
+
+              <body name="thumb_opp_pulley" pos="0 0 -0.0105" quat="1 0 0 0">
+                     <geom name="thumb_opp_pulley" type="cylinder" size="0.01 0.0005" rgba="0.5 0.5 0.5 0.5" 
+                           contype="0" conaffinity="0" group="2"/>
+                  </body>
+              
               
               <body name="thumb_base" pos="-0.0052499912 -0.022000011 -0.010000033" quat="-0.30699398 0.63698851 -0.30699344 0.6369893">
                 <joint name="thumb_mcp" type="hinge" axis="0 0 1" limited="true" range="-1 1.5" damping="0.07"/>
@@ -1309,8 +1317,8 @@
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_p1" joint="motor_p1"/>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_p2" joint="motor_p2" ctrlrange="-50 50"/>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_i2" joint="motor_i2" ctrlrange="-50 50"/>
-    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_t1" joint="motor_t1" ctrlrange="-50 50"/>
-    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_t2" joint="motor_t2" ctrlrange="-2000 2000"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_t1" joint="motor_t1" ctrlrange="-1 1"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_t2" joint="motor_t2" ctrlrange="-2 2"/>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_m1" joint="motor_m1"/>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_r1" joint="motor_r1"/>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_r2" joint="motor_r2" ctrlrange="-50 50"/>
