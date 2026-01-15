@@ -303,6 +303,9 @@
           <body name="thumb_metacarpal" pos="0 0 0" quat="1 0 0 0">
             <site name="thumb_palm_up" pos="-0.08 0 -0.015" size="0.0005" rgba="1 0 1 1"/>
             <site name="thumb_palm_down" pos="-0.09 0.005 -0.015" size="0.0005" rgba="1 0 1 1"/>
+            
+            <site name="thumb_adduction_2" pos="-0.0935 -0.031 -0.014" size="0.0005" rgba="1 0 0 1"/>
+
             <body name="thumb_joint" pos="-0.0864646 -0.029250072 -0.0054998998" quat="0.49983223 -0.51815008 0.69391676 -0.012952062">
               <joint name="thumb_opp" type="hinge" axis="0 0 1"/>
               <inertial pos="-1.01453e-09 -0.0143911 -0.0100207" mass="0.00570394" fullinertia="7.92066e-07 1.83923e-07 6.98301e-07 -7.18514e-14 -1.68427e-14 4.09261e-09"/>
@@ -316,6 +319,7 @@
               <site name="thumb_metacarpal_bottom_ext" pos="0 0 -0.0145" size="0.0005" rgba="1 0 1 1"/>
               <site name="thumb_adduction" pos="0.002 -0.011 -0.0105" size="0.0005" rgba="1 1 0 1"/>
               <site name="thumb_abduction" pos="-0.002 -0.011 -0.0105" size="0.0005" rgba="1 1 0 1"/>
+              <site name="thumb_adduction_1" pos="0.01 0 -0.0105" size="0.0005" rgba="1 0 0 1"/>
 
               <body name="thumb_opp_pulley" pos="0 0 -0.0105" quat="1 0 0 0">
                      <geom name="thumb_opp_pulley" type="cylinder" size="0.01 0.0005" rgba="0.5 0.5 0.5 0.5" 
