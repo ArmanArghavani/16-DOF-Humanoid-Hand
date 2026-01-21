@@ -130,8 +130,8 @@
                   <body name="index_dip_pulley" pos="0 0 0.00525" quat="1 0 0 0">
                     <geom name="index_dip_pulley" type="cylinder" size="0.01 0.0005" rgba="0.5 0.5 0.5 0.5" 
                           contype="0" conaffinity="0" group="2"/>
-                    <site name="index_dip_flex" pos="-0.0125 -0.002 0" size="0.0005" rgba="1 0 0 1"/>
-                    <site name="index_dip_ext" pos="-0.0125 0.002 0" size="0.0005" rgba="0 0 1 1"/>
+                    <site name="index_dip_flex" pos="-0.0125 -0.004 0" size="0.0005" rgba="1 0 0 1"/>
+                    <site name="index_dip_ext" pos="-0.0125 0.004 0" size="0.0005" rgba="0 0 1 1"/>
                   </body>
 
                 </body>
@@ -581,10 +581,10 @@
                     <site name="thumb_opp_spool" pos="0.012 0 0" size="0.0005" rgba="0 1 0 1"/>
             </body>
           </body>
-          <site name="bowden_thumb_opp_flex" pos="-0.2525 0.0390 -0.0345" size="0.001" rgba="1 0 1 1"/>
-          <site name="bowden_thumb_opp_flex_2" pos="-0.2525 0.0390 -0.024" size="0.001" rgba="1 0 1 1"/>
-          <site name="bowden_thumb_opp_ext" pos="-0.2845 0.0390 -0.0345" size="0.001" rgba="1 0 1 1"/>
-          <site name="bowden_thumb_opp_ext_2" pos="-0.2845 0.0390 -0.024" size="0.001" rgba="1 0 1 1"/>
+          <site name="bowden_thumb_opp_adduction" pos="-0.2525 0.0390 -0.0345" size="0.001" rgba="1 0 1 1"/>
+          <site name="bowden_thumb_opp_adduction_2" pos="-0.2525 0.0390 -0.024" size="0.001" rgba="1 0 1 1"/>
+          <site name="bowden_thumb_opp_abduction" pos="-0.2845 0.0390 -0.0345" size="0.001" rgba="1 0 1 1"/>
+          <site name="bowden_thumb_opp_abduction_2" pos="-0.2845 0.0390 -0.024" size="0.001" rgba="1 0 1 1"/>
 
           <body name="tendonspool_12" pos="-0.22115027 0.03655009 -0.0058747335" quat="0.5 0.5 -0.5 0.5">
             <joint axis="0 0 1" name="motor_m2" type="hinge"/>
@@ -662,7 +662,7 @@
       <site site="index_dip_spool"/>
   </spatial>
   <fixed name="winch_index_dip_flex">
-    <joint joint="motor_i1" coef="1"/>
+    <joint joint="motor_i1" coef="0.015"/>
   </fixed>
 
   <spatial name="tendon_index_pip_flex" width="0.0005" rgba="0 0 0 255">
@@ -680,7 +680,7 @@
       <site site="index_pip_spool"/>
   </spatial>
   <fixed name="winch_index_pip_flex">
-    <joint joint="motor_i1" coef="2.09"/>
+    <joint joint="motor_i1" coef="0.0209"/>
   </fixed>
 
   <spatial name="tendon_index_mcp_flex" width="0.0005" rgba="0 0 0 255">
@@ -696,7 +696,7 @@
       <site site="index_mcp_spool"/>
   </spatial>
   <fixed name="winch_index_mcp_flex">
-    <joint joint="motor_i2" coef="2"/>
+    <joint joint="motor_i2" coef="0.0209"/>
   </fixed>
 
   <spatial name="tendon_index_dip_ext" width="0.0005" rgba="0 0 0 255">
@@ -719,7 +719,7 @@
       <site site="index_dip_spool"/>
   </spatial>
   <fixed name="winch_index_dip_ext">
-    <joint joint="motor_i1" coef="-1"/>
+    <joint joint="motor_i1" coef="-0.015"/>
   </fixed>
 
   <spatial name="tendon_index_pip_ext" width="0.0005" rgba="0 0 0 255">
@@ -739,7 +739,7 @@
       <site site="index_pip_spool"/>
   </spatial>
   <fixed name="winch_index_pip_ext">
-    <joint joint="motor_i1" coef="-2.09"/>
+    <joint joint="motor_i1" coef="-0.0209"/>
   </fixed>
 
   <spatial name="tendon_index_mcp_ext" width="0.0005" rgba="0 0 0 255">
@@ -755,7 +755,7 @@
       <site site="index_mcp_spool"/>
   </spatial>
   <fixed name="winch_index_mcp_ext">
-    <joint joint="motor_i2" coef="-1"/>
+    <joint joint="motor_i2" coef="-0.0209"/>
   </fixed>
 
     <spatial name="tendon_middle_dip_flex" width="0.0005" rgba="0 0 0 255">
@@ -775,7 +775,7 @@
       <site site="middle_dip_spool"/>
   </spatial>
   <fixed name="winch_middle_dip_flex">
-    <joint joint="motor_m1" coef="1"/>
+    <joint joint="motor_m1" coef="0.015"/>
   </fixed>
 
   <spatial name="tendon_middle_pip_flex" width="0.0005" rgba="0 0 0 255">
@@ -793,7 +793,7 @@
       <site site="middle_pip_spool"/>
   </spatial>
   <fixed name="winch_middle_pip_flex">
-    <joint joint="motor_m1" coef="2.09"/>
+    <joint joint="motor_m1" coef="0.0209"/>
   </fixed>
 
   <spatial name="tendon_middle_mcp_flex" width="0.0005" rgba="0 0 0 255">
@@ -809,7 +809,7 @@
       <site site="middle_mcp_spool"/>
   </spatial>
   <fixed name="winch_middle_mcp_flex">
-    <joint joint="motor_m2" coef="1"/>
+    <joint joint="motor_m2" coef="0.0209"/>
   </fixed>
 
   <spatial name="tendon_middle_dip_ext" width="0.0005" rgba="0 0 0 255">
@@ -832,7 +832,7 @@
       <site site="middle_dip_spool"/>
   </spatial>
   <fixed name="winch_middle_dip_ext">
-    <joint joint="motor_m1" coef="-1"/>
+    <joint joint="motor_m1" coef="-0.015"/>
   </fixed>
 
   <spatial name="tendon_middle_pip_ext" width="0.0005" rgba="0 0 0 255">
@@ -852,7 +852,7 @@
       <site site="middle_pip_spool"/>
   </spatial>
   <fixed name="winch_middle_pip_ext">
-    <joint joint="motor_m1" coef="-2.09"/>
+    <joint joint="motor_m1" coef="-0.0209"/>
   </fixed>
   <spatial name="tendon_middle_mcp_ext" width="0.0005" rgba="0 0 0 255">
       <site site="middle_mcp_ext"/>
@@ -867,7 +867,7 @@
       <site site="middle_mcp_spool"/>
   </spatial>
   <fixed name="winch_middle_mcp_ext">
-    <joint joint="motor_m2" coef="-1"/>
+    <joint joint="motor_m2" coef="-0.0209"/>
   </fixed>
 
   <spatial name="tendon_ring_dip_flex" width="0.0005" rgba="0 0 0 255">
@@ -887,7 +887,7 @@
       <site site="ring_dip_spool"/>
   </spatial>
   <fixed name="winch_ring_dip_flex">
-    <joint joint="motor_r1" coef="1"/>
+    <joint joint="motor_r1" coef="0.015"/>
   </fixed>
 
   <spatial name="tendon_ring_pip_flex" width="0.0005" rgba="0 0 0 255">
@@ -905,7 +905,7 @@
       <site site="ring_pip_spool"/>
   </spatial>
   <fixed name="winch_ring_pip_flex">
-    <joint joint="motor_r1" coef="2.09"/>
+    <joint joint="motor_r1" coef="0.0209"/>
   </fixed>
 
   <spatial name="tendon_ring_mcp_flex" width="0.0005" rgba="0 0 0 255">
@@ -921,7 +921,7 @@
       <site site="ring_mcp_spool"/>
   </spatial>
   <fixed name="winch_ring_mcp_flex">
-    <joint joint="motor_r2" coef="1"/>
+    <joint joint="motor_r2" coef="0.0209"/>
   </fixed>
 
   <spatial name="tendon_ring_dip_ext" width="0.0005" rgba="0 0 0 255">
@@ -944,7 +944,7 @@
       <site site="ring_dip_spool"/>
   </spatial>
   <fixed name="winch_ring_dip_ext">
-    <joint joint="motor_r1" coef="-1"/>
+    <joint joint="motor_r1" coef="-0.015"/>
   </fixed>
   <spatial name="tendon_ring_pip_ext" width="0.0005" rgba="0 0 0 255">
       <site site="ring_pip_ext"/>
@@ -963,7 +963,7 @@
       <site site="ring_pip_spool"/>
   </spatial>
   <fixed name="winch_ring_pip_ext">
-    <joint joint="motor_r1" coef="-2.09"/>
+    <joint joint="motor_r1" coef="-0.0209"/>
   </fixed>
   <spatial name="tendon_ring_mcp_ext" width="0.0005" rgba="0 0 0 255">
       <site site="ring_mcp_ext"/>
@@ -978,7 +978,7 @@
       <site site="ring_mcp_spool"/>
   </spatial>
   <fixed name="winch_ring_mcp_ext">
-    <joint joint="motor_r2" coef="-1"/>
+    <joint joint="motor_r2" coef="-0.0209"/>
   </fixed>
 
     <spatial name="tendon_pinky_dip_flex" width="0.0005" rgba="0 0 0 255">
@@ -998,7 +998,7 @@
       <site site="pinky_dip_spool"/>
   </spatial>
   <fixed name="winch_pinky_dip_flex">
-    <joint joint="motor_p1" coef="1"/>
+    <joint joint="motor_p1" coef="0.015"/>
   </fixed>
 
   <spatial name="tendon_pinky_pip_flex" width="0.0005" rgba="0 0 0 255">
@@ -1016,7 +1016,7 @@
       <site site="pinky_pip_spool"/>
   </spatial>
   <fixed name="winch_pinky_pip_flex">
-    <joint joint="motor_p1" coef="2.09"/>
+    <joint joint="motor_p1" coef="0.0209"/>
   </fixed>
   <spatial name="tendon_pinky_mcp_flex" width="0.0005" rgba="0 0 0 255">
       <site site="pinky_mcp_flex"/>
@@ -1031,7 +1031,7 @@
       <site site="pinky_mcp_spool"/>
   </spatial>
   <fixed name="winch_pinky_mcp_flex">
-    <joint joint="motor_p2" coef="1"/>
+    <joint joint="motor_p2" coef="0.0209"/>
   </fixed>
 
   <spatial name="tendon_pinky_dip_ext" width="0.0005" rgba="0 0 0 255">
@@ -1054,7 +1054,7 @@
       <site site="pinky_dip_spool"/>
   </spatial>
   <fixed name="winch_pinky_dip_ext">
-    <joint joint="motor_p1" coef="-1"/>
+    <joint joint="motor_p1" coef="-0.015"/>
   </fixed>
 
   <spatial name="tendon_pinky_pip_ext" width="0.0005" rgba="0 0 0 255">
@@ -1074,7 +1074,7 @@
       <site site="pinky_pip_spool"/>
   </spatial>
   <fixed name="winch_pinky_pip_ext">
-    <joint joint="motor_p1" coef="-2.09"/>
+    <joint joint="motor_p1" coef="-0.0209"/>
   </fixed>
 
   <spatial name="tendon_pinky_mcp_ext" width="0.0005" rgba="0 0 0 255">
@@ -1090,7 +1090,7 @@
       <site site="pinky_mcp_spool"/>
   </spatial>
   <fixed name="winch_pinky_mcp_ext">
-    <joint joint="motor_p2" coef="-1"/>
+    <joint joint="motor_p2" coef="-0.0209"/>
 </fixed>
 
 <spatial name="tendon_thumb_dip_flex" width="0.0005" rgba="1 0 0 1">
@@ -1113,7 +1113,7 @@
       <site site="thumb_dip_spool"/>
   </spatial>
   <fixed name="winch_thumb_dip_flex">
-    <joint joint="motor_t1" coef="1"/>
+    <joint joint="motor_t1" coef="0.015"/>
   </fixed>
 
   <spatial name="tendon_thumb_pip_flex" width="0.0005" rgba="0 0 1 1">
@@ -1134,7 +1134,7 @@
       <site site="thumb_pip_spool"/>
   </spatial>
   <fixed name="winch_thumb_pip_flex">
-    <joint joint="motor_t1" coef="2.09"/>
+    <joint joint="motor_t1" coef="0.0209"/>
   </fixed>
 
   <spatial name="tendon_thumb_mcp_flex" width="0.0005" rgba="0 1 0 1">
@@ -1153,7 +1153,7 @@
       <site site="thumb_mcp_spool"/>
   </spatial>
   <fixed name="winch_thumb_mcp_flex">
-    <joint joint="motor_t2" coef="1"/>
+    <joint joint="motor_t2" coef="0.0209"/>
   </fixed>
 
   <spatial name="tendon_thumb_dip_ext" width="0.0005" rgba="0 1 0 1">
@@ -1180,7 +1180,7 @@
       <site site="thumb_dip_spool"/>
   </spatial>
   <fixed name="winch_thumb_dip_ext">
-    <joint joint="motor_t1" coef="-1"/>
+    <joint joint="motor_t1" coef="-0.015"/>
   </fixed>
 
   <spatial name="tendon_thumb_pip_ext" width="0.0005" rgba="1 1 0 1">
@@ -1205,7 +1205,7 @@
       <site site="thumb_pip_spool"/>
   </spatial>
   <fixed name="winch_thumb_pip_ext">
-    <joint joint="motor_t1" coef="-2.09"/>
+    <joint joint="motor_t1" coef="-0.0209"/>
   </fixed>
 
   <spatial name="tendon_thumb_mcp_ext" width="0.0005" rgba="0 1 1 1">
@@ -1226,7 +1226,24 @@
       <site site="thumb_mcp_spool"/>
   </spatial>
   <fixed name="winch_thumb_mcp_ext">
-    <joint joint="motor_t2" coef="-1"/>
+    <joint joint="motor_t2" coef="-0.0209"/>
+  </fixed>
+  <spatial name="tendon_thumb_adduction" width="0.0005" rgba="1 0 1 1">
+      <site site="thumb_adduction"/>
+      <geom geom="thumb_opp_pulley"/>
+      <site site="thumb_adduction_1"/>
+      <site site="thumb_adduction_2"/>
+      <site site="thumb_palm_up"/>
+      <site site="thumb_palm_down"/>
+      <site site="wrist_center"/>
+      <site site="wrist_bottom"/>
+      <site site="bowden_thumb_opp_adduction"/>
+      <site site="bowden_thumb_opp_adduction_2"/>
+      <geom geom="thumb_opp_spool"/>
+      <site site="thumb_opp_spool"/>
+  </spatial>
+  <fixed name="winch_thumb_adduction">
+    <joint joint="motor_t3" coef="0.0209"/>
   </fixed>
 </tendon>
 
@@ -1314,13 +1331,16 @@
   <tendon tendon1="tendon_thumb_mcp_flex"
           tendon2="winch_thumb_mcp_flex"
           polycoef="0 1 0 0 0"/>
+  <tendon tendon1="tendon_thumb_adduction"
+          tendon2="winch_thumb_adduction"
+          polycoef="0 1 0 0 0"/>
 </equality>
 
 <actuator>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_i1" joint="motor_i1"/>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_p1" joint="motor_p1"/>
-    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_p2" joint="motor_p2" ctrlrange="-50 50"/>
-    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_i2" joint="motor_i2" ctrlrange="-50 50"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_p2" joint="motor_p2" ctrlrange="-5 5"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_i2" joint="motor_i2" ctrlrange="-5 5"/>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_t1" joint="motor_t1" ctrlrange="-1 1"/>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_t2" joint="motor_t2" ctrlrange="-2 2"/>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_m1" joint="motor_m1"/>
@@ -1328,7 +1348,7 @@
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_r2" joint="motor_r2" ctrlrange="-50 50"/>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_open" joint="motor_open"/>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_t3" joint="motor_t3"/>
-    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_m2" joint="motor_m2" ctrlrange="-50 50"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_m2" joint="motor_m2" ctrlrange="-5 5"/>
   </actuator>
   <sensor>
   <tendonpos tendon="tendon_index_dip_flex"/>
