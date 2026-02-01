@@ -93,6 +93,7 @@
             <site name="index_metacarpal_top1_flex" pos="-0.006  -0.009 -0.00525" size="0.0005" rgba="1 0 1 1"/>
             <site name="index_metacarpal_bottom_ext" pos="-0.09 0.006 -0.00525" size="0.0005" rgba="0 0 1 1"/>
             <site name="index_metacarpal_top_ext" pos="0.01 0.006 -0.00525" size="0.0005" rgba="0 0 1 1"/>
+            <site name="index_mcp_joint" pos="0  0 -0.00525" size="0.0005" rgba="1 0 1 1"/>
 
             <body name="index_basefinger" pos="0 0 -0.010250068" quat="0.70710591 4.3762697e-07 -4.3762697e-07 0.70710766">
               <joint name="index_mcp" type="hinge" axis="0 0 1" limited="true" range="-1.57080 0" damping="0.07"/>
@@ -120,6 +121,7 @@
                     <site name="index_pip_flex" pos="-0.01 -0.002 0" size="0.0005" rgba="1 0 0 1"/>
                     <site name="index_pip_ext" pos="-0.01 0.006 0" size="0.0005" rgba="0 0 1 1"/>
                     <site name="index_pip_ext_top" pos="-0.03 0.011 0" size="0.0005" rgba="0 0 1 1"/>
+                    <site name="index_pip_joint" pos="0 0 0" size="0.0005" rgba="1 0 1 1"/>
                    </body>
                 <body name="index_tipfinger" pos="-0.030000099 3.7134041e-08 -0.010250001" quat="1 8.711159e-24 -2.0980041e-17 3.5055356e-17">
                   <joint name="index_dip" type="hinge" axis="0 0 1" limited="true" range="0 1.22173" damping="0.07"/>
@@ -145,6 +147,7 @@
             <site name="middle_metacarpal_top1_flex" pos="-0.006  -0.009 -0.02775" size="0.0005" rgba="1 0 0 1"/>
             <site name="middle_metacarpal_bottom_ext" pos="-0.09 0.006 -0.02775" size="0.0005" rgba="0 0 1 1"/>
             <site name="middle_metacarpal_top_ext" pos="0.01 0.006 -0.02775" size="0.0005" rgba="0 0 1 1"/>
+            <site name="middle_mcp_joint" pos="0  0 -0.02775" size="0.0005" rgba="1 0 1 1"/>
             
             <body name="middle_basefinger" pos="4.0537844e-08 1.2316537e-16 -0.032750041" quat="0.70710591 4.3762697e-07 -4.3762697e-07 0.70710766">
               <joint name="middle_mcp" type="hinge" axis="0 0 1" limited="true" range="-1.57080 0" damping="0.07"/>
@@ -173,6 +176,7 @@
                     <site name="middle_pip_flex" pos="-0.01 -0.002 0" size="0.0005" rgba="1 0 0 1"/>
                     <site name="middle_pip_ext" pos="-0.01 0.006 0" size="0.0005" rgba="0 0 1 1"/>
                     <site name="middle_pip_ext_top" pos="-0.03 0.011 0" size="0.0005" rgba="0 0 1 1"/>
+                    <site name="middle_pip_joint" pos="0 0 0" size="0.0005" rgba="1 0 1 1"/>
                    </body>
                 
                 <body name="middle_tipfinger" pos="-0.030000099 3.7134041e-08 -0.010250001" quat="1 8.711159e-24 -2.0980041e-17 3.5055356e-17">
@@ -199,6 +203,7 @@
             <site name="ring_metacarpal_top1_flex" pos="-0.006  -0.009 -0.04995" size="0.0005" rgba="1 0 0 1"/>
             <site name="ring_metacarpal_bottom_ext" pos="-0.09 0.006 -0.04995" size="0.0005" rgba="0 0 1 1"/>
             <site name="ring_metacarpal_top_ext" pos="0.01 0.006 -0.04995" size="0.0005" rgba="0 0 1 1"/>
+            <site name="ring_mcp_joint" pos="0  0 -0.04995" size="0.0005" rgba="1 0 1 1"/>
             
             <body name="ring_basefinger" pos="6.8388271e-08 1.9862584e-16 -0.055250068" quat="0.70710591 4.3762697e-07 -4.3762697e-07 0.70710766">
               <joint name="ring_mcp" type="hinge" axis="0 0 1" limited="true" range="-1.57080 0" damping="0.07"/>
@@ -227,6 +232,7 @@
                     <site name="ring_pip_flex" pos="-0.01 -0.002 0" size="0.0005" rgba="1 0 0 1"/>
                     <site name="ring_pip_ext" pos="-0.01 0.006 0" size="0.0005" rgba="0 0 1 1"/>
                     <site name="ring_pip_ext_top" pos="-0.03 0.011 0" size="0.0005" rgba="0 0 1 1"/>
+                    <site name="ring_pip_joint" pos="0 0 0" size="0.0005" rgba="1 0 1 1"/>
                    </body>
                 
                 <body name="ring_tipfinger" pos="-0.030000099 3.7134041e-08 -0.010250001" quat="1 5.3248275e-17 2.2204514e-16 2.7755638e-16">
@@ -253,6 +259,7 @@
             <site name="pinky_metacarpal_top1_flex" pos="-0.006  -0.009 -0.07245" size="0.0005" rgba="1 0 0 1"/>
             <site name="pinky_metacarpal_bottom_ext" pos="-0.09 0.006 -0.07245" size="0.0005" rgba="0 0 1 1"/>
             <site name="pinky_metacarpal_top_ext" pos="0.005 0.006 -0.07245" size="0.0005" rgba="0 0 1 1"/>
+            <site name="pinky_mcp_joint" pos="0  0 -0.07245" size="0.0005" rgba="1 0 1 1"/>
             
             <body name="pinky_basefinger" pos="9.6238699e-08 2.7235159e-16 -0.077750096" quat="0.70710591 4.3762697e-07 -4.3762697e-07 0.70710766">
               <joint name="pinky_mcp" type="hinge" axis="0 0 1" limited="true" range="-1.57080 0" damping="0.07"/>
@@ -281,6 +288,7 @@
                     <site name="pinky_pip_flex" pos="-0.01 -0.006 0" size="0.0005" rgba="1 0 0 1"/>
                     <site name="pinky_pip_ext" pos="-0.01 0.006 0" size="0.0005" rgba="0 0 1 1"/>
                     <site name="pinky_pip_ext_top" pos="-0.03 0.011 0" size="0.0005" rgba="0 0 1 1"/>
+                    <site name="pinky_pip_joint" pos="0 0 0" size="0.0005" rgba="1 0 1 1"/>
                    </body>
                 
                 <body name="pinky_tipfinger" pos="-0.030000111 3.7134041e-08 3.7133995e-08" quat="0 1 0 0">
@@ -649,10 +657,9 @@
       <site site="index_dip_flex"/>
       <geom geom="index_dip_pulley"/>
       <site site="index_pip_flex"/>
-      <geom geom="index_pip_pulley"/>
+      <site site="index_pip_joint"/>
       <site site="index_mcp_flex"/>
-      <geom geom="index_mcp_pulley"/>
-      <site site="index_metacarpal_top1_flex"/>
+      <site site="index_mcp_joint"/>
       <site site="index_metacarpal_bottom_flex"/>
       <site site="wrist_center"/>
       <site site="wrist_bottom"/>
@@ -669,8 +676,7 @@
       <site site="index_pip_flex"/>
       <geom geom="index_pip_pulley"/>
       <site site="index_mcp_flex"/>
-      <geom geom="index_mcp_pulley"/>
-      <site site="index_metacarpal_top1_flex"/>
+      <site site="index_mcp_joint"/>
       <site site="index_metacarpal_bottom_flex"/>
       <site site="wrist_center"/>
       <site site="wrist_bottom"/>
@@ -704,12 +710,10 @@
       <geom geom="index_dip_pulley"/>
       <site site="index_pip_ext_top"/>
       <site site="index_pip_ext"/>
-      <geom geom="index_pip_pulley"/>
+      <site site="index_pip_joint"/>
       <site site="index_mcp_ext_top1"/>
       <site site="index_mcp_ext_top2"/>
-      <site site="index_mcp_ext"/>
-      <geom geom="index_mcp_pulley"/>
-      <site site="index_metacarpal_top_ext"/>
+      <site site="index_mcp_joint"/>
       <site site="index_metacarpal_bottom_ext"/>
       <site site="wrist_center"/> 
       <site site="wrist_bottom"/>
@@ -728,8 +732,7 @@
       <site site="index_mcp_ext_top1"/>
       <site site="index_mcp_ext_top2"/>
       <site site="index_mcp_ext"/>
-      <geom geom="index_mcp_pulley"/>
-      <site site="index_metacarpal_top_ext"/>
+      <site site="index_mcp_joint"/>
       <site site="index_metacarpal_bottom_ext"/>
       <site site="wrist_center"/>
       <site site="wrist_bottom"/>
@@ -762,10 +765,9 @@
       <site site="middle_dip_flex"/>
       <geom geom="middle_dip_pulley"/>
       <site site="middle_pip_flex"/>
-      <geom geom="middle_pip_pulley"/>
+      <site site="middle_pip_joint"/>
       <site site="middle_mcp_flex"/>
-      <geom geom="middle_mcp_pulley"/>
-      <site site="middle_metacarpal_top1_flex"/>
+      <site site="middle_mcp_joint"/>
       <site site="middle_metacarpal_bottom_flex"/>
       <site site="wrist_center"/>
       <site site="wrist_bottom"/>
@@ -782,8 +784,7 @@
       <site site="middle_pip_flex"/>
       <geom geom="middle_pip_pulley"/>
       <site site="middle_mcp_flex"/>
-      <geom geom="middle_mcp_pulley"/>
-      <site site="middle_metacarpal_top1_flex"/>
+      <site site="middle_mcp_joint"/>
       <site site="middle_metacarpal_bottom_flex"/>
       <site site="wrist_center"/>
       <site site="wrist_bottom"/>
@@ -817,12 +818,11 @@
       <geom geom="middle_dip_pulley"/>
       <site site="middle_pip_ext_top"/>
       <site site="middle_pip_ext"/>
-      <geom geom="middle_pip_pulley"/>
+      <site site="middle_pip_joint"/>
       <site site="middle_mcp_ext_top1"/>
       <site site="middle_mcp_ext_top2"/>
       <site site="middle_mcp_ext"/>
-      <geom geom="middle_mcp_pulley"/>
-      <site site="middle_metacarpal_top_ext"/>
+      <site site="middle_mcp_joint"/>
       <site site="middle_metacarpal_bottom_ext"/>
       <site site="wrist_center"/> 
       <site site="wrist_bottom"/>
@@ -841,8 +841,7 @@
       <site site="middle_mcp_ext_top1"/>
       <site site="middle_mcp_ext_top2"/>
       <site site="middle_mcp_ext"/>
-      <geom geom="middle_mcp_pulley"/>
-      <site site="middle_metacarpal_top_ext"/>
+      <site site="middle_mcp_joint"/>
       <site site="middle_metacarpal_bottom_ext"/>
       <site site="wrist_center"/> 
       <site site="wrist_bottom"/>
@@ -874,10 +873,9 @@
       <site site="ring_dip_flex"/>
       <geom geom="ring_dip_pulley"/>
       <site site="ring_pip_flex"/>
-      <geom geom="ring_pip_pulley"/>
+      <site site="ring_pip_joint"/>
       <site site="ring_mcp_flex"/>
-      <geom geom="ring_mcp_pulley"/>
-      <site site="ring_metacarpal_top2_flex"/>
+      <site site="ring_mcp_joint"/>
       <site site="ring_metacarpal_bottom_flex"/>
       <site site="wrist_center"/>
       <site site="wrist_bottom"/>
@@ -894,8 +892,7 @@
       <site site="ring_pip_flex"/>
       <geom geom="ring_pip_pulley"/>
       <site site="ring_mcp_flex"/>
-      <geom geom="ring_mcp_pulley"/>
-      <site site="ring_metacarpal_top2_flex"/>
+      <site site="ring_mcp_joint"/>
       <site site="ring_metacarpal_bottom_flex"/>
       <site site="wrist_center"/>
       <site site="wrist_bottom"/>
@@ -929,12 +926,11 @@
       <geom geom="ring_dip_pulley"/>
       <site site="ring_pip_ext_top"/>
       <site site="ring_pip_ext"/>
-      <geom geom="ring_pip_pulley"/>
+      <site site="ring_pip_joint"/>
       <site site="ring_mcp_ext_top1"/>
       <site site="ring_mcp_ext_top2"/>
       <site site="ring_mcp_ext"/>
-      <geom geom="ring_mcp_pulley"/>
-      <site site="ring_metacarpal_top_ext"/>
+      <site site="ring_mcp_joint"/>
       <site site="ring_metacarpal_bottom_ext"/>
       <site site="wrist_center"/> 
       <site site="wrist_bottom"/>
@@ -952,8 +948,7 @@
       <site site="ring_mcp_ext_top1"/>
       <site site="ring_mcp_ext_top2"/>
       <site site="ring_mcp_ext"/>
-      <geom geom="ring_mcp_pulley"/>
-      <site site="ring_metacarpal_top_ext"/>
+      <site site="ring_mcp_joint"/>
       <site site="ring_metacarpal_bottom_ext"/>
       <site site="wrist_center"/> 
       <site site="wrist_bottom"/>
@@ -985,10 +980,9 @@
       <site site="pinky_dip_flex"/>
       <geom geom="pinky_dip_pulley"/>
       <site site="pinky_pip_flex"/>
-      <geom geom="pinky_pip_pulley"/>
-      <site site="pinky_mcp_flex"/>
-      <geom geom="pinky_mcp_pulley"/>
-      <site site="pinky_metacarpal_top2_flex"/>
+      <site site="pinky_pip_joint"/>
+      <site site="pinky_mcp_ext"/>
+      <site site="pinky_mcp_joint"/>
       <site site="pinky_metacarpal_bottom_flex"/>
       <site site="wrist_center"/>
       <site site="wrist_bottom"/>
@@ -1005,8 +999,7 @@
       <site site="pinky_pip_flex"/>
       <geom geom="pinky_pip_pulley"/>
       <site site="pinky_mcp_flex"/>
-      <geom geom="pinky_mcp_pulley"/>
-      <site site="pinky_metacarpal_top2_flex"/>
+      <site site="pinky_mcp_joint"/>
       <site site="pinky_metacarpal_bottom_flex"/>
       <site site="wrist_center"/>
       <site site="wrist_bottom"/>
@@ -1039,12 +1032,11 @@
       <geom geom="pinky_dip_pulley"/>
       <site site="pinky_pip_ext_top"/>
       <site site="pinky_pip_ext"/>
-      <geom geom="pinky_pip_pulley"/>
+      <site site="pinky_pip_joint"/>
       <site site="pinky_mcp_ext_top1"/>
       <site site="pinky_mcp_ext_top2"/>
       <site site="pinky_mcp_ext"/>
-      <geom geom="pinky_mcp_pulley"/>
-      <site site="pinky_metacarpal_top_ext"/>
+      <site site="pinky_mcp_joint"/>
       <site site="pinky_metacarpal_bottom_ext"/>
       <site site="wrist_center"/>
       <site site="wrist_bottom"/>
@@ -1063,8 +1055,7 @@
       <site site="pinky_mcp_ext_top1"/>
       <site site="pinky_mcp_ext_top2"/>
       <site site="pinky_mcp_ext"/>
-      <geom geom="pinky_mcp_pulley"/>
-      <site site="pinky_metacarpal_top_ext"/>
+      <site site="pinky_mcp_joint"/>
       <site site="pinky_metacarpal_bottom_ext"/>
       <site site="wrist_center"/>
       <site site="wrist_bottom"/>
@@ -1091,7 +1082,7 @@
   </spatial>
   <fixed name="winch_pinky_mcp_ext">
     <joint joint="motor_p2" coef="-0.0209"/>
-</fixed>
+  </fixed>
 
 <spatial name="tendon_thumb_dip_flex" width="0.0005" rgba="1 0 0 1">
       <site site="thumb_dip_flex"/>
@@ -1338,17 +1329,17 @@
 
 <actuator>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_i1" joint="motor_i1"/>
-    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_p1" joint="motor_p1"/>
-    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_p2" joint="motor_p2" ctrlrange="-5 5"/>
-    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_i2" joint="motor_i2" ctrlrange="-5 5"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_p1" joint="motor_p1" ctrlrange="-3 3"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_p2" joint="motor_p2" ctrlrange="-1.5 1.5"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_i2" joint="motor_i2" ctrlrange="-1.5 1.5"/>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_t1" joint="motor_t1" ctrlrange="-1 1"/>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_t2" joint="motor_t2" ctrlrange="-2 2"/>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_m1" joint="motor_m1"/>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_r1" joint="motor_r1"/>
-    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_r2" joint="motor_r2" ctrlrange="-50 50"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_r2" joint="motor_r2" ctrlrange="-1.5 1.5"/>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_open" joint="motor_open"/>
     <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_t3" joint="motor_t3"/>
-    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_m2" joint="motor_m2" ctrlrange="-5 5"/>
+    <position class="C:\Users\aargh\Downloads\MUJO SIM\mujoco\model\Robot Hand" name="motor_m2" joint="motor_m2" ctrlrange="-1.5 1.5"/>
   </actuator>
   <sensor>
   <tendonpos tendon="tendon_index_dip_flex"/>
