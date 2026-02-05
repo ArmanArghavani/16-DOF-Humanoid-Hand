@@ -212,18 +212,22 @@ try:
         mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=rgb)
         
         # Detect hand landmarks
+        # Detector.detect returns a HandLandmarkerResult object
         result = detector.detect(mp_image)
         
         # Process landmarks and control robot
+        # Hand land_marks is a list of detected hands, each detected hand is a sequence of 21 landmark objects
         if result.hand_landmarks:
+            # index on 0 to get only one hand. Other indexes can be used if num_hands>1
             hand = result.hand_landmarks[0]
             
             # Calculate joint angles from landmarks
             joint_angles = landmarks_to_joint_angles(hand)
             
-            # Apply to MuJoCo simulation
+            # Apply detected angles to MuJoCo simulation based on joints defined in XML file
             apply_joint_angles_to_mujoco(data, joint_angles)
             
+            # You can remove this if you want:
             # Print status every 30 frames
             frame_count += 1
             if frame_count % 30 == 0:
