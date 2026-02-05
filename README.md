@@ -1,6 +1,8 @@
 # 16-DOF Humanoid Hand
 
- <video controls width="640" src="https://www.armanarghavani.com/humanoid_hand_4_fingers.mp4">Your browser does not support the video tag.</video>
+## 🎥 Hand Demo
+![16-DOF Humanoid Hand Demo](https://s6.ezgif.com/tmp/ezgif-629a8e7f7585b770.gif)
+
 
  This repository contains design files, simulation assets, and demo code for a 16-degree-of-freedom (DOF) underactuated tendon-driven humanoid hand with forearm-mounted actuators. The goal of the project is to provide a mechanically simple hand that is easier to control than a fully-actuated design while achieving approximately 75% of human motion fidelity.
 
