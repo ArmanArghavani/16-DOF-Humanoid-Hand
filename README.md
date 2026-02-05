@@ -1,5 +1,4 @@
 # 16-DOF Humanoid Hand
- # 16-DOF Humanoid Hand
 
  <video controls width="640" src="https://www.armanarghavani.com/humanoid_hand_4_fingers.mp4">Your browser does not support the video tag.</video>
 
