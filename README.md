@@ -31,7 +31,7 @@
 
  ## Software Component
 
- - **MuJoCo Simulation**: scene and robot definitions are provided in `robot_hand_forearm_root.xml` and `scene_forearm_root.xml`. Use these files to run simulated experiments, validate tendon routing, and test control policies in a physics simulator.
+ - **MuJoCo Simulation**: scene and robot definitions are provided in `robot_hand_forearm_root.xml` and `scene_forearm_root.xml`. Use these files to define the tendon specification of the finger parts. The software capturing the hand movements is a pre-existing OpenCV hand tracking model which then sends those live signals to a MujoCo passive widnow. This allows it to have simulated experiments in the Mujoco environment like holding balls, validating tendon routing, and testing control policies in a physics simulator.
  - **Real-time Hand Tracking Control**: `hand_mujoco_control_v2.py` integrates MediaPipe hand tracking with MuJoCo simulation to control the robotic hand in real-time by tracking your hand movements via webcam.
  - **MATLAB / Simulink**: Simscape Multibody block diagram simulating joint ranges and limits, validating ~75% human motion capabilities.
 
